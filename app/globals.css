@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Base colors */
+    --background: 0 0% 100%;
+    --foreground: 210 20% 12%;
+
+    /* Card colors */
+    --card: 39 33% 96%;
+    --card-foreground: 210 20% 12%;
+
+    /* Popover colors */
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 20% 12%;
+
+    /* Primary colors */
+    --primary: 225 70% 58%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary colors */
+    --secondary: 14 100% 70%;
+    --secondary-foreground: 210 20% 12%;
+
+    /* Muted colors */
+    --muted: 210 20% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    /* Accent colors */
+    --accent: 96 55% 48%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Destructive colors */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Border, input, and ring colors */
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 225 70% 58%;
+
+    /* Chart colors */
+    --chart-1: 225 70% 58%;
+    --chart-2: 14 100% 70%;
+    --chart-3: 96 55% 48%;
+    --chart-4: 271 81% 56%;
+    --chart-5: 41 100% 59%;
+
+    /* Sidebar colors */
+    --sidebar-background: 225 70% 58%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 0 0% 100%;
+    --sidebar-primary-foreground: 225 70% 58%;
+    --sidebar-accent: 14 100% 70%;
+    --sidebar-accent-foreground: 210 20% 12%;
+    --sidebar-border: 225 60% 65%;
+    --sidebar-ring: 0 0% 100%;
+
+    /* Functional colors */
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    --info: 199 89% 48%;
+    --info-foreground: 0 0% 100%;
+
+    /* Border radius */
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Merriweather", serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Quicksand", sans-serif;
+    @apply font-bold;
+  }
+}
